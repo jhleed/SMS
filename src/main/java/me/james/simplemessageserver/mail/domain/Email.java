@@ -7,8 +7,6 @@ import lombok.Data;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
 public class Email {
-    @JsonProperty("from")
-    private String from; //보내는 사람
     @JsonProperty("to")
     private String to; //받는 사람
     @JsonProperty("title")

@@ -23,7 +23,6 @@ public class MailController {
             @RequestBody Email email
     ) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom(email.getFrom());
         message.setTo(email.getTo());
         message.setSubject(email.getTitle());
         message.setText(email.getMessage());
