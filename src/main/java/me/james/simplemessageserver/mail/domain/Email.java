@@ -9,8 +9,11 @@ import lombok.Data;
 public class Email {
     @JsonProperty("from")
     private String from; //보내는 사람
+    @JsonProperty("to")
+    private String to; //받는 사람
     @JsonProperty("title")
     private String title; // 메일 제목
     @JsonProperty("message")
     private String message; //메일 본문
+
 }
