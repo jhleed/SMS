@@ -21,11 +21,12 @@ public class MailControllerTest {
 
     @Test
     public void sendMail() throws Exception {
+        //TODO 실제로 메일을 쏘지 않고 테스트 하는 방법은 없을까?
         //Given
         Email email = new Email();
         email.setTitle("mail title");
         email.setMessage("hello it's test message");
-        email.setTo("jhleed@naver.com"); //from 은 jhleed@radnet.kr 로 고정된다.
+        email.setTo("jhleed@naver.com");
 
         //When
         ResponseEntity<Email> result = mailController.sendMail(email);
